@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式全面布局</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+
+
+    .header{
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* 导航条 */
+    .topnav{
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .topnav a{
+        float: left;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    .topnav a:hover{
+        color: black;
+        background-color: #f1f1f1;
+    }
+
+    .leftcolumn{
+        float: left;
+        width: 75%;
+    }
+
+    .rightcolumn{
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+
+    .fakeimg{
+        background-color: rgb(156, 149, 149);
+        padding: 20px;
+        width: 100%;
+    }
+
+    .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .footer{
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 850px){
+        .leftcolumn, .rightcolumn{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    
+    @media screen and (max-width: 850px){
+        .topnav a{
+            float: left;
+            width: 100%;
+        }
+    }
+</style>
+<body>
+
+    <div class="header">
+        <h1>我的网页</h1>
+        <p>重置浏览器大小查看效果。</p>
+    </div>
+      
+    <div class="topnav">
+        <a href="#">链接</a>
+        <a href="#">链接</a>
+        <a href="#">链接</a>
+        <a href="#" style="float:right">链接</a>
+    </div>
+      
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>文章标题</h2>
+                <h5>2019 年 4 月 17日</h5>
+                <div class="fakeimg" style="height:200px;">图片</div>
+                <p>一些文本...</p>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+            </div>
+
+            <div class="card">
+                <h2>文章标题</h2>
+                <h5>2019 年 4 月 17日</h5>
+                <div class="fakeimg" style="height:200px;">图片</div>
+                <p>一些文本...</p>
+                <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>关于我</h2>
+                <div class="fakeimg" style="height:100px;">图片</div>
+                <p>关于我的一些信息..</p>
+            </div>
+
+            <div class="card">
+                <h3>热门文章</h3>
+                <div class="fakeimg"><p>图片</p></div>
+                <div class="fakeimg"><p>图片</p></div>
+                <div class="fakeimg"><p>图片</p></div>
+            </div>
+
+            <div class="card">
+                <h3>关注我</h3>
+                <p>一些文本...</p>
+            </div>
+        </div>
+    </div>
+      
+    <div class="footer">
+        <h2>底部区域</h2>
+    </div>
+      
+    
+</body>
+</html>
