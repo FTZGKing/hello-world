@@ -13,10 +13,14 @@
     }
 
 
+    /* 头部标题 */
     .header{
         background-color: #f1f1f1;
         text-align: center;
         padding: 20px;
+    }
+    .header h1{
+        font-size: 50px;
     }
 
     /* 导航条 */
@@ -25,6 +29,7 @@
         background-color: black;
     }
 
+    /* 导航条链接 */
     .topnav a{
         float: left;
         padding: 14px 16px;
@@ -34,16 +39,20 @@
         display: block;
     }
 
+    /* 链接颜色修改 */
     .topnav a:hover{
         color: black;
         background-color: #f1f1f1;
     }
 
+    /* 创建两列 */
+    /* 左侧栏 */
     .leftcolumn{
         float: left;
         width: 75%;
     }
 
+    /* 右侧栏 */
     .rightcolumn{
         float: left;
         width: 25%;
@@ -51,24 +60,28 @@
         padding-left: 20px;
     }
 
+    /* 图像部分 */
     .fakeimg{
         background-color: rgb(156, 149, 149);
         padding: 20px;
         width: 100%;
     }
 
+    /* 文章卡片效果 */
     .card{
         background-color: white;
         padding: 20px;
         margin-top: 20px;
     }
 
+    /* 列后面清除浮动 */
     .row:after{
         content: "";
         display: table;
         clear: both;
     }
 
+    /* 底部 */
     .footer{
         padding: 20px;
         text-align: center;
@@ -76,13 +89,14 @@
         margin-top: 20px;
     }
 
+    /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
     @media screen and (max-width: 850px){
         .leftcolumn, .rightcolumn{
             width: 100%;
             padding: 0;
         }
     }
-    
+    /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
     @media screen and (max-width: 850px){
         .topnav a{
             float: left;
